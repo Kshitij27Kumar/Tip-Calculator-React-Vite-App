@@ -5,8 +5,9 @@ const main = () => {
   const [bill, setBill] = useState<string>('')
   const [customTip, setCustomTip] = useState<string>('')
   const [numberOfPeople, setNumberOfPeople] = useState<string>('')
-  const [tipPerPerson, setTipPerPerson] = useState('0.00')
-  const [totalAmountPerPerson, setTotalAmountPerPerson] = useState('0.00')
+  const [tipPerPerson, setTipPerPerson] = useState<string>('0.00')
+  const [totalAmountPerPerson, setTotalAmountPerPerson] =
+    useState<string>('0.00')
 
   const handleCustomTip = () => {
     const customTipPercentage = parseFloat(customTip)
